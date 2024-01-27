@@ -129,3 +129,20 @@ public class XKCDController {
 This will create a root URL for the class that will be prepended to our other methods URLs. So lets modify our two urls to `/current` and `/past/{comicNumber}` 
 
 Now we can restart our app and navigate to `/xkcd/current` and we should still see the data we had before. Now if we change and go to `/xkcd/past/1234` we should be pulling comic 1234, change that to any other number less than the currents number and we should see them all.
+***
+## Assignment
+***
+For your assignment:
+You will create a new controller, object and endpoint to connect to the [NASA api](https://api.nasa.gov). For that you will need to generate a key, it is instant and you will recieve it in your email. Keep the key stored in the backend it does not need to be passed as a variable. 
+
+Your API should consume all of the query params for the Nasa APOD (picture of the day) API. These include:
+- date
+- start_date
+- end_date
+- count
+- thumbs
+- api_key (stored in the backend and it is your key)
+
+From your controller perspective all these should be optional as well so they have to be query params themselves. 
+
+**Deliverable**: Your GitHub link to your spring project. 
